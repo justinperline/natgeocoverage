@@ -50,11 +50,11 @@ To test this theory, I automatically paired all applicable countries to every Na
 
 With this in mind, let's see if we can answer any of these questions:
 
-Has National Geographic's coverage of each continent changed over time?
+**Has National Geographic's coverage of each continent changed over time?**
 
-At what frequency does National Geographic cover each country?
+**At what frequency does National Geographic cover each country?**
 
-Does National Geographic cover countries proportionately to how populated they are? If not, what's driving coverage?
+**Does National Geographic cover countries proportionately to how populated they are? If not, what's driving coverage?**
 
 ## Continental Drift
 
@@ -63,6 +63,9 @@ Datahub.io provides a handy <a href="https://datahub.io/JohnSnowLabs/country-and
 1. Countries with variations in spelling had both versions added then re-combined after tagging (e.g., `Côte d'Ivoire` & `Ivory Coast`)
 2. Some countries are admittedly impossible to automatically differentiate via text search (e.g., `Democratic Republic of the Congo` & `Republic of the Congo`). In these cases, all text with `Congo` was assigned just one country.
 3. Nat Geo has been around a while and a lot has changed since 1888. Burma became Myanmar, Korea split into North and South, Yugoslavia was created then dissolved, a large majority of Africa was under colonial rule, etc. The world was <a href="https://en.wikipedia.org/wiki/List_of_countries_by_population_in_1900">very different back then</a> and it's harder still to trace every country's names over the past 131 years. That's why I've only used modern-day countries in this search, which could drastically affect how often certain countries appear in the results. I'm hypothesizing this is the largest hurdle in this analysis.
-4. Some countries have naming issues that required manual editing. A few were simple liking removing references to `Dominica` when the text actually said `Dominican Republic` (e.g. `Nigeria`, `Netherlands Antilles`, `Papua New Guinea`) while others meant surfing through every tagged reference to `India` to make sure Nat Geo wasn't referencing Native Americans (e.g. `Georgia`, `Jersey`).
+4. Some countries have naming issues that required manual editing. A few were simple liking removing references to `Dominica` when the text actually said `Dominican Republic` (e.g. `Nigeria`, `Papua New Guinea`) while others meant surfing through every tagged reference to `India` to make sure Nat Geo wasn't referencing Native Americans (e.g. `Georgia`, `Jersey`).
+5. Several countries are listed as being members of two continents (e.g. `Armenia`, `Turkey`), so for this continental breakdown both instances were kept. When talking about the countries themselves later on, only one instance will be kept.
+
+
 
 
