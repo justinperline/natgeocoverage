@@ -4,7 +4,7 @@ Analyzing the contents of (almost) every National Geographic magazine since its 
 
 Before I started with any specific question in mind, I set out to explore Nat Geo's online archive with an open mind. I didn't know what kind of data might be behind the website or if there would be any at all that's visible to the public - only that I wanted to find something interesting.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCover.png" width="30%" align="left">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCover.png" width="34%" align="left">
 
 The first step I take nowadays is always checking Google Chrome's network page for any JSON files. Fortunately, Nat Geo keeps both an archive of every issue's metadata and additional data on the contents of each individual issue. Within each issue, there is information relating to an article's title, abstract, and page number. This even extends to tons and tons of photos, department notices, and editors notes.
 
@@ -24,4 +24,10 @@ Unfortunately, Nat Geo is pretty spotty with their data management. As of Decemb
  <tr><td>Avg</td><td>153.4</td><td>5.7</td><td>144.7</td><td>3.0</td></tr>
   </tbody></table></p>
 
-So the bulk of Nat Geo's metadata is really in the photos, which I've yet to dig into. The title of the photo is the only information of use there and they are much shorter in length than article titles or abstracts (an average of 29 characters). For the time being, that meant I'd focus solely on the 8,407 tagged articles spanning the last century.
+So the bulk of Nat Geo's metadata is really in the photos, which I've yet to dig into. The title of the photo is the only information immediately available and they are much shorter in length than article titles and abstracts (an average of 29 characters vs. 203). For the time being, that meant I'd focus solely on the 8,407 tagged articles spanning the last century.
+
+Examples of photo title:
+`Babasaki Gate , Tokyo , Japan`
+
+Example of article title and abstract:
+`Ascension Island, an Engineering Victory : Located halfway between South America and Africa, the tiny, bird-covered volcanic island of Ascension is a vital military refueling station with an airfield.` 
