@@ -25,6 +25,7 @@ The breakdown of metadata (out of the 1,472 with JSON) is as follows.
  <tr><td>Avg</td><td>153.4</td><td>5.7</td><td>144.7</td><td>3.0</td></tr>
   </tbody></table>
 
+
 So the bulk of Nat Geo's metadata is really in the photos. However, the photo titles are the only information immediately available and they are much shorter in length than article titles and abstracts (an average of 29 characters vs. 203). For the time being, I think it'd be wise to solely focus on the 8,407 tagged articles spanning the last century.
 
 Example of photo title:
@@ -61,9 +62,9 @@ With this in mind, let's see if we can answer any of these questions:
 Datahub.io provides a handy <a href="https://datahub.io/JohnSnowLabs/country-and-continent-codes-list">file</a> that, along with listing every modern-day country, also provides their continents. Now, a few disclaimers about how countries have been tagged and how that may or may not affect the result to follow.
 
 1. Countries with variations in spelling had both versions added then re-combined after tagging (e.g., `Côte d'Ivoire` & `Ivory Coast`)
-2. Some countries are admittedly impossible to automatically differentiate via text search (e.g., `Democratic Republic of the Congo` & `Republic of the Congo`). In these cases, all text with `Congo` was assigned just one country.
+2. Some countries are admittedly impossible to differentiate via automated text search (e.g., `Democratic Republic of the Congo` & `Republic of the Congo`). In these cases, all text with `Congo` was assigned just one country.
 3. Nat Geo has been around a while and a lot has changed since 1888. Burma became Myanmar, Korea split into North and South, Yugoslavia was created then dissolved, a large majority of Africa was under colonial rule, etc. The world was <a href="https://en.wikipedia.org/wiki/List_of_countries_by_population_in_1900">very different back then</a> and it's harder still to trace every country's names over the past 131 years. That's why I've only used modern-day countries in this search, which could drastically affect how often certain countries appear in the results. I'm hypothesizing this is the largest hurdle in this analysis.
-4. Some countries have naming issues that required manual editing. A few were simple liking removing references to `Dominica` when the text actually said `Dominican Republic` (e.g. `Nigeria`, `Papua New Guinea`) while others meant surfing through every tagged reference to `India` to make sure Nat Geo wasn't referencing Native Americans (e.g. `Georgia`, `Jersey`).
+4. A few countries have naming issues that required manual editing. Five were simple liking removing references to `Dominica` when the text actually said `Dominican Republic` (e.g. `Nigeria`, `Papua New Guinea`) while others meant surfing through every tagged reference to `India` to make sure Nat Geo wasn't referencing Native Americans (e.g. `Georgia`, `Jersey`).
 5. Several countries are listed as being members of two continents (e.g. `Armenia`, `Turkey`), so for this continental breakdown both instances were kept. When talking about the countries themselves later on, only one instance will be kept.
 
 
