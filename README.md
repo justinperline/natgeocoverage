@@ -10,7 +10,7 @@ The first step I take nowadays is always checking Google Chrome's network page f
 
 There is also a folio breakdown that lists the order of pages within each issue - something that may be interesting to look at down the road. How did Nat Geo's page layout with respect to ad space change over time? Or something along those lines.
 
-Unfortunately, Nat Geo is pretty spotty with their data management. As of December 2019, there have been 1,522 issues made and 50 of them (~3.3%) lack the JSON data to tell what's inside. Another 42 issues (~2.8%) have fewer than 5 tagged articles, photos, or other pages. On the whole though, most issues have hundreds of well-defined tags listing exactly what each article is generally about or what each photo is of. Of issues with metadata, here is the breakdown of how well-tagged everything is:
+Unfortunately, Nat Geo is pretty spotty with their data management. As of December 2019, there have been 1,522 issues made and 50 of them (~3.3%) lack any JSON data to tell what is inside. Another 42 issues (~2.8%) have fewer than 5 tagged articles, photos, or other pages. On the whole though, most issues have 150 or so well-defined tags listing the exact details of each article or photo. The breakdown of issues (out of the 1,472 with JSON) is as follows.
 
 <p align="center">
 <table>
@@ -23,3 +23,5 @@ Unfortunately, Nat Geo is pretty spotty with their data management. As of Decemb
  <tr><td>Total</td><td>225,828</td><td>8,407</td><td>213,049</td><td>4,372</td></tr>
  <tr><td>Avg</td><td>153.4</td><td>5.7</td><td>144.7</td><td>3.0</td></tr>
   </tbody></table></p>
+
+So the bulk of Nat Geo's metadata is really in the photos, which I've yet to dig into. The title of the photo is the only information of use there and they are much shorter in length than article titles or abstracts (an average of 29 characters). For the time being, that meant I'd focus solely on the 8,407 tagged articles spanning the last century.
