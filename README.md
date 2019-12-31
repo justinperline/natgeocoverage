@@ -10,7 +10,9 @@ The first step I take nowadays is always checking Google Chrome's network page f
 
 There is also a folio breakdown that lists the order of pages within each issue - something that may be interesting to look at down the road. How did Nat Geo's page layout with respect to ad space change over time? Or something along those lines.
 
-Unfortunately, Nat Geo is pretty spotty with their data management. As of December 2019, there have been 1,522 issues made and 50 of them (~3.3%) lack any JSON data to tell what is inside. Another 42 issues (~2.8%) have fewer than 5 tagged articles, photos, or other pages. On the whole though, most issues have 150 or so well-defined tags listing the exact details of each article or photo. The breakdown of issues (out of the 1,472 with JSON) is as follows.
+Unfortunately, Nat Geo is pretty spotty with their data management. As of December 2019, there have been 1,522 issues made and 50 of them (~3.3%) lack any JSON data to tell what is inside. Another 42 issues (~2.8%) have fewer than 5 tagged articles, photos, or other pages. The magazine issues with missing data are very clustered, with 45 of 50 falling from 2010-2014, 2 in 1992-1993, and the remaining 3 from 1893-1895. On the whole though, most issues have 150 or so well-defined tags listing the exact details of each article or photo. 
+
+The breakdown of metadata (out of the 1,472 with JSON) is as follows.
 
 <p align="center">
 <table>
@@ -27,7 +29,7 @@ Unfortunately, Nat Geo is pretty spotty with their data management. As of Decemb
 So the bulk of Nat Geo's metadata is really in the photos, which I've yet to dig into. The title of the photo is the only information immediately available and they are much shorter in length than article titles and abstracts (an average of 29 characters vs. 203). For the time being, that meant I'd focus solely on the 8,407 tagged articles spanning the last century.
 
 Examples of photo title:
-`Babasaki Gate , Tokyo , Japan`
+`Babasaki Gate, Tokyo, Japan`
 
 Example of article title and abstract:
 `Ascension Island, an Engineering Victory : Located halfway between South America and Africa, the tiny, bird-covered volcanic island of Ascension is a vital military refueling station with an airfield.` 
