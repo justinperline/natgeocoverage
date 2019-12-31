@@ -46,7 +46,7 @@ Another clear difference between the original magazine and today's is its length
 Now returning to the article data that we've scraped, I see a few different avenues of research ahead. We have three pieces of data: the title and abstract of almost every article Nat Geo has ever released in print, when it was released, and what page the article was on. Let's ignore the page numbers for now and just focus on what questions can be drawn from text and dates. Since Nat Geo has predominantly been a global publication, we can think of most articles as being associated with at least one specific country. Whether it's an analysis of Rwanda's future or a dive into the Brazil-French Guiana border situation, it seems that one identifiable tag could be a country's name.
 
 To test this theory, I automatically paired all applicable countries to every Nat Geo article's text (a combined title and abstract field) and wound up with a surprising number of matches. In total, 4,883 country tags were created pertaining to 3,890 unique articles, an average of ~1.3 countries per article. A few articles even had 5 countries mixed in, like <a href="https://archive.nationalgeographic.com/national-geographic/1966-dec/flipbook/Ad23/">this Dec. 1966 essay</a>:
-`Abraham, the Friend of God Following in the footsteps of the Old Testament patriarch who conceived the idea of one almighty God, the author pursues legend that is history from Iraq to Jordan, Syria, Turkey, Egypt, and Jerusalem.`
+`Abraham, the Friend of God : Following in the footsteps of the Old Testament patriarch who conceived the idea of one almighty God, the author pursues legend that is history from Iraq to Jordan, Syria, Turkey, Egypt, and Jerusalem.`
 
 With this in mind, let's see if we can answer any of these questions:
 
@@ -57,3 +57,12 @@ At what frequency does National Geographic cover each country?
 Does National Geographic cover countries proportionately to how populated they are? If not, what's driving coverage?
 
 ## Continental Drift
+
+Datahub.io provides a handy <a href="https://datahub.io/JohnSnowLabs/country-and-continent-codes-list">file</a> that, along with listing every modern-day country, also provides their continents. Now, a few disclaimers about how countries have been tagged and how that may or may not affect the result to follow.
+
+1. Countries with variations in spelling had both versions added then re-combined after tagging (e.g., `Côte d'Ivoire` & `Ivory Coast`)
+2. Some countries are admittedly impossible to automatically differentiate via text search (e.g., `Democratic Republic of the Congo` & `Republic of the Congo`). In these cases, all text with `Congo` was assigned just one country.
+3. Nat Geo has been around a while and a lot has changed since 1888. Burma became Myanmar, Korea split into North and South, Yugoslavia was created then dissolved, a large majority of Africa was under colonial rule, etc. The world was <a href="https://en.wikipedia.org/wiki/List_of_countries_by_population_in_1900">very different back then</a> and it's harder still to trace every country's names over the past 131 years. That's why I've only used modern-day countries in this search, which could drastically affect how often certain countries appear in the results.
+4. Some countries have naming issues that required manual editing. A few were simple liking removing references to `Dominica` when the text actually said `Dominican Republic` (e.g. `Nigeria`, `Netherlands Antilles`, `Papua New Guinea`) while others meant surfing through every tagged reference to `India` to make sure Nat Geo wasn't referencing native Americans or the West Indes (e.g. `Georgia`, `Jersey`).
+
+
