@@ -14,7 +14,6 @@ Unfortunately, Nat Geo is pretty spotty with their data management. As of Decemb
 
 The breakdown of metadata (out of the 1,472 with JSON) is as follows.
 
-<p align="center">
 <table>
 <thead><tr"><th></th><th>All</th><th>Articles</th><th>Photos</th><th>Other</th></tr></thead><tbody>
  <tr><td>Max</td><td>996</td><td>23</td><td>982</td><td>24</td></tr>
@@ -24,9 +23,9 @@ The breakdown of metadata (out of the 1,472 with JSON) is as follows.
  <tr><td>>= 1 Issues</td><td>1,472</td><td>1,459</td><td>1,365</td><td>846</td></tr>
  <tr><td>Total</td><td>225,828</td><td>8,407</td><td>213,049</td><td>4,372</td></tr>
  <tr><td>Avg</td><td>153.4</td><td>5.7</td><td>144.7</td><td>3.0</td></tr>
-  </tbody></table></p>
+  </tbody></table>
 
-So the bulk of Nat Geo's metadata is really in the photos. However, the photo titles are the only information immediately available and they are much shorter in length than article titles and abstracts (an average of 29 characters vs. 203). For the time being, that meant I'd focus solely on the 8,407 tagged articles spanning the last century.
+So the bulk of Nat Geo's metadata is really in the photos. However, the photo titles are the only information immediately available and they are much shorter in length than article titles and abstracts (an average of 29 characters vs. 203). For the time being, I think it'd be wise to solely focus on the 8,407 tagged articles spanning the last century.
 
 Example of photo title:
 
@@ -42,12 +41,19 @@ Before digging into the text just yet, how about looking at simply the magazine 
 
 Another clear difference between the original magazine and today's is its length. Up until the year 1900, Nat Geo averaged just under 58 pages per issue. This was followed by a steep increase in length through 1925, gaining an average of about 6 pages a year, which coincided with a <a href="https://www.wired.com/2010/01/0127national-geographic-society-founded/">change in editorial preferences</a> geared towards making the magazine more accessible and photo-heavy. And that's been right about where the magazine has settled in the century that has followed, hovering right around 165-180 pages.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPages.png" width="48%" align="right">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPages.png" width="65%" align="right">
 
-We have three pieces of data at this point: the title and abstract of almost every article Nat Geo has ever released in print, when it was released, and what page the article was on. Let's ignore the page numbers for now and just focus on what questions can be drawn from text and dates.
+Now returning to the article data that we've scraped, I see a few different avenues of research ahead. We have three pieces of data: the title and abstract of almost every article Nat Geo has ever released in print, when it was released, and what page the article was on. Let's ignore the page numbers for now and just focus on what questions can be drawn from text and dates. Since Nat Geo has predominantly been a global publication, we can think of most articles as being associated with at least one specific country. Whether it's an analysis of Rwanda's future or a dive into the Brazil-French Guiana border situation, it seems that one identifiable tag could be a country's name.
+
+To test this theory, I automatically paired all applicable countries to every Nat Geo article's text (a combined title and abstract field) and wound up with a surprising number of matches. In total, 4,883 country tags were created pertaining to 3,890 unique articles, an average of ~1.3 countries per article. A few articles even had 5 countries mixed in, like <a href="https://archive.nationalgeographic.com/national-geographic/1966-dec/flipbook/Ad23/">this Dec. 1966 essay</a>:
+`Abraham, the Friend of God Following in the footsteps of the Old Testament patriarch who conceived the idea of one almighty God, the author pursues legend that is history from Iraq to Jordan, Syria, Turkey, Egypt, and Jerusalem.`
+
+With this in mind, let's see if we can answer any of these questions:
 
 Has National Geographic's coverage of each continent changed over time?
 
 At what frequency does National Geographic cover each country?
 
 Does National Geographic cover countries proportionately to how populated they are? If not, what's driving coverage?
+
+## Continental Drift
