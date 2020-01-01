@@ -71,8 +71,8 @@ Datahub.io provides a handy <a href="https://datahub.io/JohnSnowLabs/country-and
 
 After plotting every continent's reference totals in Tableau, we get something like this. Keep in mind, the US has been removed from this dataset because there are just so many references to America that it's difficult to compare North America against any other continent.
 
-It seems that, on the whole, the rate at which Nat Geo writes about various continents has stayed somewhat consistent. Fewer articles have been written about Europe since the mid-20th century, and I would speculate much of the interest from 1910-1950 was drawn from the World Wars. In Europe's place, more articles have been written about African and Asian countries lately. However, I think it's difficult to read too much into these figures without first looking at individual country coverage, which leads to the next question - what countries have been covered the most?
+It seems that, on the whole, the rate at which Nat Geo writes about various continents has stayed somewhat consistent. Fewer articles have been written about Europe since the mid-20th century, and I would speculate much of the interest from 1910-1950 was drawn from the World Wars. In Europe's place, more articles have been written about African and Asian countries lately and I'd expect that trend to continue as those countries grow in population. However, I think it's difficult to read too much into these figures without first looking at individual country coverage, which leads to the next question - what countries have been covered the most?
 
 ## Country Coverage
 
-
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCountries.png" width="100%">
