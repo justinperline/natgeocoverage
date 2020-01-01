@@ -4,7 +4,7 @@ Analyzing the contents of (almost) every National Geographic magazine since its 
 
 Before I started with any specific question in mind, I set out to explore Nat Geo's online archive with an open mind. I didn't know what kind of data might be behind the website or if there would be any at all that's visible to the public - only that I wanted to find something interesting.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCover.png" width="28%" align="left">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCover.png" width="34%" align="right">
 
 The first step I take nowadays is always checking Google Chrome's network page for any JSON files. Fortunately, Nat Geo keeps both an archive of every issue's metadata and additional data on the contents of each individual issue. Within each issue, there is information relating to an article's title, abstract, and page number. This even extends to tons and tons of photos, department notices, and editors notes.
 
@@ -42,7 +42,7 @@ Before digging into the text just yet, how about looking at simply the magazine 
 
 Another clear difference between the original magazine and today's is its length. Up until the year 1900, Nat Geo averaged just under 58 pages per issue. This was followed by a steep increase in length through 1925, gaining an average of about 6 pages a year, which coincided with a <a href="https://www.wired.com/2010/01/0127national-geographic-society-founded/">change in editorial preferences</a> geared towards making the magazine more accessible and photo-heavy. And that's been right about where the magazine has settled in the century that has followed, hovering right around 165-180 pages.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPages.png" width="65%" align="right">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPages.png" width="66%" align="right">
 
 Now returning to the article data that we've scraped, I see a few different avenues of research ahead. We have three pieces of data: the title and abstract of almost every article Nat Geo has ever released in print, when it was released, and what page the article was on. Let's ignore the page numbers for now and just focus on what questions can be drawn from text and dates. Since Nat Geo has predominantly been a global publication, we can think of most articles as being associated with at least one specific country. Whether it's an analysis of Rwanda's future or a dive into the Brazil-French Guiana border situation, it seems that one identifiable tag could be a country's name.
 
