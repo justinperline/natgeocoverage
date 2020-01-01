@@ -75,4 +75,4 @@ It seems that, on the whole, the rate at which Nat Geo writes about various cont
 
 ## Country Coverage
 
-
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCountryRefs.png" width="100%">
