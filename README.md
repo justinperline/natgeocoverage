@@ -75,4 +75,10 @@ It seems that, on the whole, the rate at which Nat Geo writes about various cont
 
 ## Country Coverage
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCountryRefs.png" width="100%">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCountries.png" width="100%">
+
+Looking at every country on a map, it's easy to tell who the primary subjects of National Geographic have been - namely the United States, United Kingdom, China, Japan, Mexico, Canada, and Russia. 5 of the 11 most populated countries on Earth, both of America's closest neighbors, 5 members of the <a href="https://en.wikipedia.org/wiki/Group_of_Eight">Group of Eight</a>, etc. The next three countries by reference numbers are: Australia, India, and France. 
+
+To some extent, these countries make sense. They have generally been at the </a href="https://www.usnews.com/news/best-countries/best-international-influence">forefront of international news</a> because of how influential are, and have been throughout recent history. Conversely, if you were to assume coverage numbers would be based mostly off of current population size (as some proxy for historical population size), just look at where Pakistan, Indonesia, and Nigeria fall. In total, these three countries represent about 8.8% of all people and yet they've only been referenced in Nat Geo 21, 30, and 10 times, respectively. They also place much lower on the US News report ranking countries by how influential the are.
+
+But there's something else driving reference numbers here. Just look at Antarctica (if you want to call it a country), which has 45 references despite a population of about 1,000 and zero influence to speak of. The third factor has to relate to something besides the country itself. I believe this is an approximation of a location's 'wonder', which is a nice way of terming a combination of exoticism and archeological attainment. 
