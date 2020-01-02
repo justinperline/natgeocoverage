@@ -4,7 +4,7 @@ Analyzing the contents of (almost) every National Geographic magazine since its 
 
 Before I started with any specific question in mind, I set out to explore Nat Geo's online archive with an open mind. I didn't know what kind of data might be behind the website or if there would be any at all that's visible to the public - only that I wanted to find something interesting.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCover.png" width="34%" align="right">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/images/NatGeoCover.png" width="34%" align="right">
 
 The first step I take nowadays is always checking Google Chrome's network page for any JSON files. Fortunately, Nat Geo keeps both an archive of every issue's metadata and additional data on the contents of each individual issue. Within each issue, there is information relating to an article's title, abstract, and page number. This even extends to tons and tons of photos, department notices, and editors notes.
 
@@ -42,7 +42,7 @@ Before digging into the text just yet, how about looking at simply the magazine 
 
 Another clear difference between the original magazine and today's is its length. Up until the year 1900, Nat Geo averaged just under 58 pages per issue. This was followed by a steep increase in length through 1925, gaining an average of about 6 pages a year, which coincided with a <a href="https://www.wired.com/2010/01/0127national-geographic-society-founded/">change in editorial preferences</a> geared towards making the magazine more accessible and photo-heavy. And that's been right about where the magazine has settled in the century that has followed, hovering right around 165-180 pages.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPages.png" width="66%" align="right">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/images/NatGeoPages.png" width="66%" align="right">
 
 Now returning to the article data that we've scraped, I see a few different avenues of research ahead. We have three pieces of data: the title and abstract of almost every article Nat Geo has ever released in print, when it was released, and what page the article was on. Let's ignore the page numbers for now and just focus on what questions can be drawn from text and dates. Since Nat Geo has predominantly been a global publication, we can think of most articles as being associated with at least one specific country. Whether it's an analysis of Rwanda's future or a dive into the Brazil-French Guiana border situation, it seems that one identifiable tag could be a country's name.
 
@@ -67,7 +67,7 @@ Datahub.io provides a handy <a href="https://datahub.io/JohnSnowLabs/country-and
 4. A few countries have naming issues that required manual editing. Five were simple liking removing references to `Dominica` when the text actually said `Dominican Republic` (e.g. `Nigeria`, `Papua New Guinea`) while others meant surfing through every tagged reference to `India` to make sure Nat Geo wasn't referencing Native Americans (e.g. `Georgia`, `Chad`).
 5. Several countries are listed as being members of two continents (e.g. `Armenia`, `Turkey`), so for this continental breakdown both instances were kept. When talking about the countries themselves later on, only one instance is kept.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoContinents.png" width="100%">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/images/NatGeoContinents.png" width="100%">
 
 After plotting every continent's reference totals in Tableau, we get something like this. Keep in mind, the US has been removed from this dataset because there are just so many references to America that it's difficult to compare North America against any other continent.
 
@@ -75,7 +75,7 @@ It seems that, on the whole, the rate at which Nat Geo writes about various cont
 
 ## Country Coverage
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoCountries.png" width="100%">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/images/NatGeoCountries.png" width="100%">
 
 Looking at every country on a map, it's easy to tell who the primary subjects of National Geographic have been - namely the United States, United Kingdom, China, Japan, Mexico, Canada, and Russia. 5 of the 11 most populated countries on Earth, both of America's closest neighbors, 5 members of the <a href="https://en.wikipedia.org/wiki/Group_of_Eight">Group of Eight</a>, etc. The next three countries by reference numbers are: Australia, India, and France. 
 
@@ -95,7 +95,7 @@ This map was made in Tableau with the <a href="https://www.r-bloggers.com/ggplot
 
 No need to get too fancy with the model just yet, as the only piece of external data I have at the moment is modern-day population figures. I have a few ideas for sources of additional data that might be factors in Nat Geo's coverage, but I'll save that until the end.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPopModel.png" width="70%" align="left">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/images/NatGeoPopModel.png" width="70%" align="left">
 
 I'm running a simple linear model predicting reference numbers based off of <a href="https://datahub.io/JohnSnowLabs/population-figures-by-country">Datahub.io's population datasheet</a> and removing the following countries because of the disclaimers already brought up: USA, North Korea, South Korea, Democractic Republic of the Congo, Republic of the Congo.
 
