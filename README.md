@@ -95,15 +95,15 @@ This map was made in Tableau with the <a href="https://www.r-bloggers.com/ggplot
 
 No need to get too fancy with the model just yet, as the only piece of external data I have at the moment is modern-day population figures. I have a few ideas for sources of additional data that might be factors in Nat Geo's coverage, but I'll save that until the end.
 
-<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPopModel.png" width="50%", align="left">
+<img src="https://github.com/justinperline/natgeocoverage/blob/master/NatGeoPopModel.png" width="70%" align="left">
 
-I'm running a simple linear model predicting reference numbers based off of <a href="https://datahub.io/JohnSnowLabs/population-figures-by-country">Datahub.io's population datasheet</a> and removing these countries because of the disclaimers I made before (USA, North Korea, South Korea, Democractic Republic of the Congo, Republic of the Congo).
+I'm running a simple linear model predicting reference numbers based off of <a href="https://datahub.io/JohnSnowLabs/population-figures-by-country">Datahub.io's population datasheet</a> and removing the following countries because of the disclaimers already brought up: USA, North Korea, South Korea, Democractic Republic of the Congo, Republic of the Congo.
 
 Overall, the fit isn't half bad with an R^2 of **0.26**. So there is some actual signal that comes from a country having more or less people. Of course, keep in mind that this is modern-day (2016) population data paired against modern-day country names, and does not account for past populations that may have changed in rank order.
 
 # Data Hungry
 
-I think there are better ways to model this effect and the best way to do so begins with better data, starting off by including former country names (and former country's names). Then modeling using a country-year aggregate (e.g. 1971 France) would result in a more accurate understanding of what kind of coverage might be expected, especially because this could be paired with more representative population data.
+I think there are better ways to model this effect and the best way to do so begins with better data, starting off with attempting to include former country names (and former country's names). Then, modeling using a country-year aggregate (e.g. 1971 France) would result in a more accurate understanding of what kind of coverage might be expected, especially because this could be paired with more representative population data.
 
 I'd also like to incorporate more data that could explain some of the assumptions I made in regards to what drives coverage: country influence, exoticism, and archaeological attainment. These are ambiguous terms right now that I hope to solidify in the future.
 
