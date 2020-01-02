@@ -106,7 +106,7 @@ I think there are better ways to model this effect and the best way to do so beg
 
 I'd also like to incorporate more data that could explain some of the assumptions I made in regards to what drives coverage:  influence, exoticism, and archaeological attainment. These are ambiguous terms right now that I hope to solidify in the future.
 
-Using the actual US News influence report could be interesting, but it only extends to 80 countries. Counting <a href="https://en.wikipedia.org/wiki/World_Heritage_Sites_by_country">World Heritage</a> or <a href="https://en.wikipedia.org/wiki/List_of_archaeological_sites_by_country">archaeological sites</a> by country may also hold some clues. If you happen to know of any interesting datasets (whether already in a file format or just spread out online) that could help proxy these concepts, or if you have other ideas as to what's been a driver of National Geographic's coverage, don't hesitate to reach out: *jtperline@gmail.com*.
+Using the actual US News influence report could be interesting, but it only extends to 80 countries. Counting <a href="https://en.wikipedia.org/wiki/World_Heritage_Sites_by_country">World Heritage sites</a>, <a href="https://en.wikipedia.org/wiki/List_of_archaeological_sites_by_country">archaeological sites</a>, or tourism statistics by country may also hold clues. If you happen to know of any interesting datasets (whether already in a file format or just spread out online) that could help proxy these concepts, or if you have other ideas as to what's been a driver of National Geographic's coverage, don't hesitate to reach out: *jtperline@gmail.com*.
 
 
 
